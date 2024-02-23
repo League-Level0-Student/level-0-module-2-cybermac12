@@ -26,12 +26,17 @@ public class SafeCracker {
 	}
 
 	void crackTheSafe() {
+		
+	int count = 0;
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */		
-		tryCode(secretCode);
-	}
+		for (int i=0; i<9999999; i++) {
+		tryCode(count);
+		count += 1;
+		}
+		}
   
 	 void tryCode(int guess) {
 		System.out.println("trying " + guess);
